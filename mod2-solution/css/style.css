@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+	margin-bottom: 15px;
+	text-align: center;
+}
+div{
+	padding: 5px;
+}
+section{
+	background-color: grey;
+	border: 1px solid black;
+	position: relative;
+	clear: both;
+}
+p{
+	margin-top: 25px;
+	padding: 5px 10px;
+}
+
+.content{
+	width:100%;
+}
+.title{
+	border: 1px solid black;
+	font-weight: bold;
+	padding: 3px;	
+	text-align: center;
+	width: 130px;
+	position: absolute;
+	top: -1px;
+	right: -1px;
+}
+#uno{
+	background-color: pink;
+}
+#dos{
+	background-color: red;
+	color: white;
+}
+#tres{
+	background-color: yellow;
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+	.col-lg-4{
+		float: left;		
+	}
+	.col-lg-4 {
+    	width: 33.3%;
+  }
+}
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+	.col-md-6, .col-md-11{
+		float: left;		
+	}
+	.col-md-6{
+		width: 50%;
+	}
+	.col-md-12 {
+    	width: 100%;
+  }
+}
+
